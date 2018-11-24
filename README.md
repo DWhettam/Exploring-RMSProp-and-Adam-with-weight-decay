@@ -1,14 +1,4 @@
-# Machine Learning Practical
+# Exploring RMSProp and Adam with Weight Decay
+This repo consists of work exploring and implementing RMSProp and Adam with Weight Decay for an assignment for Edinburgh University's [Machine Learning Practical](http://www.inf.ed.ac.uk/teaching/courses/mlp/index-2018.html) course. The framework used in this project is provided by the University, and [can be found on GitHub](https://github.com/CSTR-Edinburgh/mlpractical). The inspiration for the coursework is from [Fixing Weight Decay Regularization in Adam](https://arxiv.org/abs/1711.05101) by Ilya Loshchilov and Frank Hutter.
 
-This repository contains the code for the University of Edinburgh [School of Informatics](http://www.inf.ed.ac.uk) course [Machine Learning Practical](http://www.inf.ed.ac.uk/teaching/courses/mlp/).
-
-This assignment-based course is focused on the implementation and evaluation of machine learning systems. Students who do this course will have experience in the design, implementation, training, and evaluation of machine learning systems.
-
-The code in this repository is split into:
-
-  *  a Python package `mlp`, a [NumPy](http://www.numpy.org/) based neural network package designed specifically for the course that students will implement parts of and extend during the course labs and assignments,
-  *  a series of [Jupyter](http://jupyter.org/) notebooks in the `notebooks` directory containing explanatory material and coding exercises to be completed during the course labs.
-
-## Getting set up
-
-Detailed instructions for setting up a development environment for the course are given in [this file](notes/environment-set-up.md). Students doing the course will spend part of the first lab getting their own environment set up.
+This work consists of NumPy implementations of both RMSProp and Adam (see [/mlp/learning_rules.py](https://github.com/DWhettam/Exploring-RMSProp-and-Adam-with-weight-decay/blob/master/mlp/learning_rules.py)), an implementation of cosine annealing with warm restarts from [Loshchilov and Hutter](https://arxiv.org/abs/1711.05101) (see [/mlp/schedulers](https://github.com/DWhettam/Exploring-RMSProp-and-Adam-with-weight-decay/blob/master/mlp/schedulers.py)), and an implementation of L2 regularisation and weight decay, also from [Loshchilov and Hutter](https://arxiv.org/abs/1711.05101) (see [/mlp/learning_rules.py](https://github.com/DWhettam/Exploring-RMSProp-and-Adam-with-weight-decay/blob/master/mlp/learning_rules.py)). Experiments were then conducted to compare RMSProp and Adam, explore the effects of cosine annealing and compare weight decay to L2 regularisation for Adam. Experiment results and discussion are inlcluded in the [final report](https://github.com/DWhettam/Exploring-RMSProp-and-Adam-with-weight-decay/blob/master/report/MLP_Assignment_1.pdf)
